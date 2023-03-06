@@ -14,7 +14,7 @@ function gerarClima(e) {
   e.preventDefault();
 
   function zerarValoresAoPesquisar() {
-    document.body.querySelector(".imgIntro").style.display = "none";
+    imgIntro.style.display = "none";
     climaCidade.innerText = "Buscando...";
     tempCidade.innerText = "";
     dataCidade.innerText = "";
@@ -75,7 +75,7 @@ function gerarClima(e) {
         <p>Min: ${j.min_temp}°</p>
         `;
 
-          if (j.temp <= 18) {
+          if (j.temp <= 19) {
             imgClima[1].src =
               "https://cdn-icons-png.flaticon.com/512/1684/1684374.png";
           } else {
