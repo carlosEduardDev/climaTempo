@@ -79,6 +79,10 @@ body {
   color: aliceblue;
 }
 
+.nigth .clima{
+    background-color: #223344;
+}
+
 .clima__cidade-temperatura {
   display: flex;
   justify-content: center;
@@ -154,7 +158,7 @@ form {
 }
 
 #cidade:hover {
-  width: 200px;
+  width: 120px;
 }
 
 .logo,
@@ -174,6 +178,18 @@ header {
   z-index: 1;
 }
 
+header img{
+    width:35px;
+}
+
+.nigth header img{
+    filter: invert(100%);
+}
+
+.nigth header .logo{
+    filter: invert(0);
+}
+
 footer {
   text-align: center;
   padding: 25px 30px;
@@ -186,16 +202,8 @@ footer {
   width: 100%;
 }
 
-.nigth footer img {
-  filter: invert(100%);
-}
-
-.nigth footer img:hover {
-  filter: invert(70%);
-}
-
 footer p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -203,32 +211,9 @@ footer span {
   color: #6286a8;
 }
 
-footer img {
-  width: 40px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-footer img:hover {
-  transform: scale(1.05);
-  filter: invert(20%);
-}
-
-footer a:hover {
-  border: none;
-}
-
 @media (max-width: 800px) {
   header {
     padding: 10px 15px;
-  }
-
-  footer img {
-    width: 30px;
-  }
-  footer p {
-    font-size: 17px;
   }
 }
 
